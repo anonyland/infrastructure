@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it synapse curl --header "Authorization: Bearer TOKEN" -X POST http://0.0.0.0:8008/_synapse/admin/v1/background_updates/start_job -d '{ "job_name": "populate_stats_process_rooms" }'
